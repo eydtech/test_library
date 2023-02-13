@@ -1,0 +1,109 @@
+
+$card-background: #fff;
+$card-radius: 10px;
+$card-shadow: rgba(231, 242, 248, 0.5);
+$card-shadow-hover: #eeeeee85;
+
+@mixin card-shadow-hover($color: $card-shadow-hover) {
+  box-shadow: 0 4px 8px 6px $color;
+}
+
+@mixin card-shadow-mobile($color: $card-shadow-hover) {
+  box-shadow: 0 0 8px 2px $color;
+}
+
+.Card {
+  background-color: $card-background;
+  border-radius: $card-radius;
+  box-shadow: 0 2px 12px 2px rgba(231, 242, 248, 0.5); //$card-shadow;
+  overflow: auto;
+  transition: 0.3s ease;
+}
+
+// hover over card, card scales (not clickable)
+.ScaleCard {
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.ShrinkCard {
+  &:hover {
+    transform: scale(0.98);
+  }
+}
+
+.GreyHover {
+  &:hover {
+    background-color: #eae9e9;
+  }
+}
+
+.noHover {
+  &:hover {
+    box-shadow: 0 2px 12px 2px $card-shadow;
+  }
+}
+
+// clickable card, hover card scales
+.ClickCard {
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 2px 12px 6px $card-shadow-hover;
+  }
+
+  &.ScaleCard:hover {
+    transform: scale(1.02);
+  }
+
+  &.ShrinkCard:hover {
+    transform: scale(0.98);
+  }
+}
+
+.Link {
+  text-decoration: none !important;
+}
+
+.Flat {
+  box-shadow: 0 0px 0px 0px $card-shadow;
+}
+
+.Flat:hover {
+  box-shadow: 0 0px 0px 0px $card-shadow;
+}
+
+.PurpleGradient {
+  background-image: linear-gradient(80deg, #5b6df7, #a98cf8);
+}
+
+.GreenGradient {
+  background-image: linear-gradient(263deg, #67e68b, #29d6e6);
+}
+
+.BlueGradient {
+  background-image: linear-gradient(60deg, #39ebeb, #73c7ff);
+}
+
+.PinkGradient {
+  background-image: linear-gradient(90deg, #c74da3, #f4788e);
+}
+
+.TransparentHover {
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 5px;
+  &:hover {
+    background-color: #e8e7e776;
+    //background-color: #e8e7e700;
+  }
+}
+
+.Transparent {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.Dark {
+  background-color: #e8e7e776;
+}

@@ -7,6 +7,8 @@ registry=https://registry.npmjs.org/
 
 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
 
+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 NEW
+
 This project is part of a [blog & video tutorial](https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe) on how to create and publish your own component library.
 
 [![React Component Library Video Tutorial](https://img.youtube.com/vi/XHQi5a0TmMc/0.jpg)](https://youtu.be/XHQi5a0TmMc)
