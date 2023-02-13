@@ -1,5 +1,5 @@
 {
-  "name": "@YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME",
+  "name": "@eydtech/test_library",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/YOUR_REPOSITORY_NAME"
   },
@@ -53,5 +53,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publickConfig": {
+    "registry": "https://npm.pkg.github.com/eydtech"
+  }
 }
