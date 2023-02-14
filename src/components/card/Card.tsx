@@ -29,31 +29,30 @@ export interface CardProps {
   onClickUrl?: (url: any) => void;
 }
 
-export default React.memo(
-  ({
-    children,
-    className,
-    onClick,
-    onPush,
-    scalesOnHover,
-    shrinkOnHover,
-    greyOnHover,
-    backgroundImage,
-    backgroundColor,
-    path,
-    flat,
-    padding,
-    purpleGradient,
-    blueGradient,
-    greenGradient,
-    pinkGradient,
-    noHover,
-    transparentHover,
-    transparent,
-    dark,
-    id,
-    onClickUrl,
-  }: CardProps) => {
+const Card = ({ 
+  children,
+  className,
+  onClick,
+  onPush,
+  scalesOnHover,
+  shrinkOnHover,
+  greyOnHover,
+  backgroundImage,
+  backgroundColor,
+  path,
+  flat,
+  padding,
+  purpleGradient,
+  blueGradient,
+  greenGradient,
+  pinkGradient,
+  noHover,
+  transparentHover,
+  transparent,
+  dark,
+  id,
+  onClickUrl,
+}: CardProps) => {
     const memo = (
       <div
         id={id}
@@ -89,7 +88,6 @@ export default React.memo(
     ) : (
       memo
     )
-  },
-)
+  }
 
-//
+export default Card
